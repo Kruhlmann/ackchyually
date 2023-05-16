@@ -1,6 +1,7 @@
-from tests.mock.youtube_video_id import MockYouTubeVideoId
-from tests.mock.web_video_transcriber import MockWebVideoTranscriber
 from tests.mock.transcript_summarizer import MockTranscriptSummarizer
+from tests.mock.web_video_transcriber import MockWebVideoTranscriber
+from tests.mock.youtube_video_id import MockYouTubeVideoId
+
 
 def test_summarizer() -> None:
     transcript = "output"
