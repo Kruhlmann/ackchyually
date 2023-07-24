@@ -67,7 +67,7 @@ def runbot(dc_api_key: str, oa_api_key: str) -> None:
     async def on_ready() -> None:
         print(f"Logged in as {bot.user}")
 
-    @bot.slash_command(description="Critique YouTube video", guild_ids=[755881283074261022, 572880907682447380])
+    @bot.slash_command(description="Critique YouTube video")
     async def yt(interaction: nextcord.Interaction, youtube_url: str) -> None:
         try:
             sys.stderr.write(f"User {interaction.user} requested {youtube_url}\n")
